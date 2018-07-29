@@ -325,6 +325,7 @@ div .age12to14 {
     .track-name {
         width:95%;
         margin: auto;
+        text-align: center;
     }
     .track-photo {
         width:95%;
@@ -333,11 +334,13 @@ div .age12to14 {
         margin-top:10px;
     }
     .track-label-description {
-        font-size: 90%;
+        font-size: 18px;
+        text-align: justify;
     }
     .track-label {
-        font-size:20px;
+        font-size:25px;
         margin: auto;
+        line-height: normal;
     }
     .new-track {
         margin-top:50px;

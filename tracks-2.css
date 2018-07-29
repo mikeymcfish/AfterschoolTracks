@@ -276,7 +276,7 @@ div .age12to14 {
     background-color: var(--12-14-color);
 }
 
-@media only screen and (max-width: 950px) {
+@media screen and (max-width: 950px) {
     .subway-icon {
         display:none;
     }
@@ -315,7 +315,7 @@ div .age12to14 {
     }
 
 }
-@media only screen and (max-width: 650px) {
+@media screen and (max-width: 650px) {
     .track-details {
         display: none;
     }
@@ -323,20 +323,33 @@ div .age12to14 {
         display: none;
     }
     .track-name {
-        width:60%;
-        margin-left:0px;
+        width:95%;
+        margin: auto;
     }
     .track-photo {
-        width:40%;
+        width:95%;
         min-height:200px;
+        margin:auto;
+        margin-top:10px;
     }
     .track-label-description {
         font-size: 90%;
     }
     .track-label {
         font-size:20px;
+        margin: auto;
     }
     .new-track {
         margin-top:50px;
+    }
+    .track-info {
+        flex-direction: column;
+        margin: auto;
+    }
+    .tag-section div {
+        flex-grow: 2;
+    }
+    .age-section div {
+        flex-grow: 2;
     }
 }

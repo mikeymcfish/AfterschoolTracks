@@ -356,3 +356,9 @@ div .age12to14 {
         flex-grow: 2;
     }
 }
+
+#minecraft-fall {
+    background-image: url("img/minecraft-fall.png");
+    background-position: center;
+    background-size: cover;
+}

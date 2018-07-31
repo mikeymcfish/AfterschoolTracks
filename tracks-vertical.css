@@ -166,7 +166,7 @@ body {
     /*justify-content: flex-start;*/
     /*align-content: flex-start;*/
     width:70px;
-    height: 600px;
+    height: 700px;
     margin-top:15px;
     margin-left: 30px;
 }
@@ -175,7 +175,7 @@ body {
     /*justify-content: flex-start;*/
     /*align-content: center;*/
     width:6px;
-    height:600px;
+    height:700px;
     border-radius: 10px;
     position: relative;
 }

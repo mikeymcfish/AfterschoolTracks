@@ -1,0 +1,583 @@
+
+body {
+    --minecraft-color: rgb(87, 178, 255);
+    --roblox-color: rgb(44, 206, 23);
+    --fortnite-color: rgb(0, 79, 180);
+    --coding-color: rgb(38, 180, 20);
+    --hardware-color: rgb(73, 73, 73);
+    --video-color: rgb(255, 154, 200);
+
+    --project-stop-color: white;
+    --background-color: black;
+    --font-color: white;
+    --background-color: #f6f6f6;
+    --font-color: #333333;
+    --7-9-color: red;
+    --9-11-color: blue;
+    --12-14-color: green;
+    background-color: var(--background-color);
+    font-family: Helvetica;
+    color: var(--font-color);
+}
+
+.track-details {
+    display: none;
+}
+
+.new-track {
+    margin-top:150px;
+}
+
+#container {
+
+}
+
+.subway-icon {
+    display: flex;
+    justify-content: center;
+    /*align-content: center;*/
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    font-size: 66px;
+    background-color: rgb(255, 61, 61);
+    box-shadow: -12px -16px 0px rgba(0, 0, 0, 0.15) inset;
+    flex-shrink: 0;
+    /*flex-grow:3;*/
+    color: white;
+    font-weight: 900;
+    line-height: 100px;
+}
+
+.first-track {
+
+    margin-top:40px;
+    /*border: solid;*/
+    /*border-color: #666666;*/
+    /*border-width: 2px;*/
+
+}
+
+
+#minecraft-track .color {
+    background-color: var(--minecraft-color);
+    --season-stop-color: var(--minecraft-color);
+    --stop-outline-color: var(--minecraft-color);
+}
+#roblox-track .color {
+    background-color: var(--roblox-color);
+    --season-stop-color: var(--roblox-color);
+    --stop-outline-color: var(--roblox-color);
+}
+#fortnite-track .color {
+    background-color: var(--fortnite-color);
+    --season-stop-color: var(--fortnite-color);
+    --stop-outline-color: var(--fortnite-color);
+}
+#coding-track .color {
+    background-color: var(--coding-color);
+    --season-stop-color: var(--coding-color);
+    --stop-outline-color: var(--coding-color);
+}
+#hardware-track .color {
+    background-color: var(--hardware-color);
+    --season-stop-color: var(--hardware-color);
+    --stop-outline-color: var(--hardware-color);
+}
+#video-track .color {
+    background-color: var(--video-color);
+    --season-stop-color: var(--video-color);
+    --stop-outline-color: var(--video-color);
+}
+
+
+
+.subway-icon div {
+    /*width:auto;*/
+    /*height:auto;*/
+    /*margin: auto;*/
+}
+
+.track-name {
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    height:100%;
+    width:50%;
+    margin-left:0px;
+    flex-grow: .5;
+
+}
+.track-info {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /*height:150px;*/
+}
+.track-photo {
+    width:30%;
+    background-color: #666666;
+    margin: 0px 15px 0px 15px;
+    min-height: 120px;
+    /*max-height: 500px;*/
+
+}
+.track-details {
+    width:30%;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+.track-label {
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-left:20px;
+    font-size:22px;
+    line-height: 24px;
+    font-weight: 900;
+    height: 100%;
+    /*text-align: center;*/
+
+}
+
+.track-label-description {
+    font-size:70%;
+    font-weight: 100;
+    font-weight: normal;
+    line-height: 120%;
+    margin-top:15px;
+    padding-bottom:5px;
+    padding-top: 5px;
+
+}
+
+.track-label div {
+    width:auto;
+    height:auto;
+    margin: auto;
+}
+
+.track {
+    /*display: flex;*/
+    /*justify-content: flex-start;*/
+    /*align-content: flex-start;*/
+    width:70px;
+    height: 600px;
+    margin-top:15px;
+    margin-left: 30px;
+}
+.track-line {
+    /*display: flex;*/
+    /*justify-content: flex-start;*/
+    /*align-content: center;*/
+    width:6px;
+    height:600px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.season-start {
+    border-radius: 100%;
+    background-color: var(--season-stop-color);
+    display: block;
+    position: absolute;
+    top:-20px;
+    left:-10px;
+    width: 18px;
+    height: 18px;
+    border: 4px solid var(--stop-outline-color);
+    box-shadow: -6px -8px rgba(0, 0, 0, 0.15) inset, 0px -2px  var(--background-color);
+
+}
+
+.project-start {
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: var(--project-stop-color);
+    display: block;
+    position: absolute;
+    /*left:-10px;*/
+    left:-4px;
+    border: 2px solid var(--stop-outline-color);
+    box-shadow: -6px -4px 0px rgba(0, 0, 0, 0.15) inset;
+
+}
+
+.project-name {
+    /*transform: rotate(45deg);*/
+    font-size: 14px;
+    white-space: nowrap;
+    text-align: left;
+    transform-origin: bottom;
+    /*margin-top:19px;*/
+    margin-left:30px;
+    font-weight: 500;
+    line-height: 95%;
+    margin-bottom: auto;
+}
+.project-name.mini-course {
+    /*margin-top: 30px;*/
+    /*margin-left:45px;*/
+    font-size: 75%;
+}
+.tag-section,.age-section {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    align-content: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-bottom:4px;
+    font-weight: 400;
+
+}
+.tag-section div {
+    align-content: flex-start;
+    justify-content: flex-start;
+    height:20px;
+    line-height: 18px;
+    margin:5px 5px 0px 0px;
+    background-color: orange;
+    color:white;
+    padding: 0px 10px 0px 10px;
+    border-radius: 8px;
+    /*flex-grow: 1;*/
+    text-align: center;
+}
+.age-section div {
+    height:20px;
+    line-height: 18px;
+    margin:0px 5px 0px 0px;
+    background-color: red;
+    color:white;
+    padding: 0px 10px 0px 10px;
+    border-radius: 8px;
+    /*flex-grow: .5;*/
+    text-align: center;
+}
+
+div .online-safety-tag {
+    background-color: hotpink;
+}
+
+div .age7to9 {
+    background-color: var(--7-9-color);
+}
+div .age9to11 {
+    background-color: var(--9-11-color);
+}
+div .age12to14 {
+    background-color: var(--12-14-color);
+}
+
+
+/*Overwrite for vertical*/
+
+.first-track, .new-track {
+    max-width: 350px;
+}
+
+.track-name {
+    width:95%;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.subway-icon {
+    margin: auto;
+    margin-bottom: 10px;
+}
+.track-photo {
+    width:95%;
+    min-height:200px;
+    margin:auto;
+    margin-top:10px;
+}
+.track-label-description {
+    font-size: 16px;
+    text-align: justify;
+}
+.track-label {
+     font-size:22px;
+     margin: auto;
+     line-height: normal;
+     padding-bottom:5px;
+ }
+.new-track {
+    margin-top:50px;
+}
+.track-info {
+    flex-direction: column;
+    margin: auto;
+}
+.tag-section div {
+    flex-grow: 2;
+}
+.age-section div {
+    flex-grow: 2;
+}
+
+@media screen and (max-width: 950px) {
+    .subway-icon {
+        display:none;
+    }
+    .project-name, .project-name.mini-course {
+        font-size: 80%;
+        margin-top:10px;
+        margin-left:10px;
+    }
+    .project-name.mini-course {
+        font-size: 60%;
+        margin-top:25px;
+        margin-left:-10px;
+    }
+
+    .project-start {
+        height:15px;
+        width:15px;
+        margin-top:4px;
+    }
+    .season-start {
+        width: 25px;
+        height: 25px;
+        margin-top:6px;
+    }
+    .track-details {
+        font-size: 90%;
+    }
+    .track-label-description {
+        font-size: 70%;
+    }
+    .track-label {
+        font-size:20px;
+    }
+    .new-track {
+        margin-top:120px;
+    }
+
+}
+@media screen and (max-width: 650px) {
+    .track-details {
+        display: none;
+    }
+    .track {
+        display: none;
+    }
+    .track-name {
+        width:95%;
+        margin: auto;
+        text-align: center;
+    }
+    .track-photo {
+        width:95%;
+        min-height:200px;
+        margin:auto;
+        margin-top:10px;
+    }
+    .track-label-description {
+        font-size: 18px;
+        text-align: justify;
+    }
+    .track-label {
+        font-size:25px;
+        margin: auto;
+        line-height: normal;
+    }
+    .new-track {
+        margin-top:50px;
+    }
+    .track-info {
+        flex-direction: column;
+        margin: auto;
+    }
+    .tag-section div {
+        flex-grow: 2;
+    }
+    .age-section div {
+        flex-grow: 2;
+    }
+}
+
+#minecraft-fall {
+    background-image: url("img/minecraft-fall.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.w-button {
+    display: inline-block;
+    padding: 9px 15px;
+    background-color: #3898EC;
+    color: white;
+    border: 0;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.mini-button {
+    margin-top: 5px;
+    padding: 5px 8px;
+    background-color: #10b659;
+    font-family: Exo, sans-serif;
+    font-size: 14px;
+    margin: auto;
+}
+
+.under-button {
+    padding: 5px 8px;
+    font-family: Exo, sans-serif;
+    font-size: 14px;
+    white-space: nowrap;
+    /*margin-top:19px;*/
+    margin-left:35px;
+    font-weight: 500;
+    line-height: 95%;
+    margin-bottom: auto;
+    width: 100%;
+    text-align: center;
+    color: #666666;
+    font-style: italic;
+    margin-top: -2px;
+}
+
+.season-end {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    box-shadow: none;
+    margin: auto;
+    width: auto;
+}
+
+.season-end a {
+    font-size: 14px;
+    white-space: nowrap;
+    text-align: left;
+    transform-origin: bottom;
+    /*margin-top:19px;*/
+    margin-left:35px;
+    font-weight: 500;
+    line-height: 95%;
+    margin-bottom: auto;
+    width: 100%;
+    text-align: center;
+}
+.season-name {
+    font-size: 18px;
+    white-space: nowrap;
+    text-align: left;
+    transform-origin: bottom;
+    margin-top:3px;
+    margin-left:40px;
+    font-weight: 800;
+    line-height: 95%;
+    margin-bottom: auto;
+}
+
+.season-dates {
+    white-space: nowrap;
+    text-align: left;
+    transform-origin: bottom;
+    margin-top:7px;
+    margin-left:45px;
+
+    margin-bottom: auto;
+
+    color: #686868;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.season-description {
+
+    white-space: nowrap;
+    text-align: left;
+    transform-origin: bottom;
+    margin-top:7px;
+    margin-left:45px;
+    margin-bottom: auto;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 6px;
+    width: 200px;
+    /*font-weight: 500;*/
+}
+
+.season-description ul {
+    margin-top:5px;
+    font-weight: bold;
+}
+.season-description li {
+    font-weight: 300;
+}
+
+div .track-photo {
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+.buy-all {
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #10b659;
+    padding:10px;
+    width:80%;
+    margin-top: 20px;
+
+}
+
+.best-deal {
+    font-size:80%;
+    color: #666666;
+    font-style: italic;
+}
+.buy-all .season-dates {
+    white-space: nowrap;
+    text-align: center;
+    margin:auto;
+    color: #686868;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top:10px;
+}
+
+.buy-all a{
+
+    font-size: 17px;
+    white-space: nowrap;
+    text-align: center;
+    transform-origin: bottom;
+    /*margin-top:19px;*/
+    font-weight: 500;
+    line-height: 95%;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+}
+.buy-all .under-button {
+    margin: auto;
+    width: 80%;
+}
+.buy-all {
+    font-family: Helvetica;
+    font-weight: 900;
+}
+

@@ -14,7 +14,7 @@ body {
     --background-color: white;
 
     --font-color: #333333;
-    --background-color-alphed: rgba(246,246,246,.2);
+    --background-color-alphed: rgba(255,255,255,.7);
     --7-9-color: red;
     --9-11-color: blue;
     --12-14-color: green;
@@ -152,9 +152,8 @@ body {
 
 .track-label-description {
     font-size:70%;
-    font-weight: 100;
     font-weight: normal;
-    line-height: 120%;
+    line-height: 140%;
     margin-top:15px;
     padding-bottom:5px;
     padding-top: 5px;
@@ -191,21 +190,21 @@ body {
     width:90%;
     margin-left: 50px;
     margin-top: 10px;
-    margin-bottom: -20px;
-    font-size: 16px;
-    font-weight: 900;
+    margin-bottom: -12px;
+    font-size: 14px;
+    font-weight: 200;
 }
 .season-name {
     color: #666;
     margin:auto;
     width: 100%;
     border-style: solid;
-    border-width: 0px 0px 2px 0px;
+    border-width: 0px 0px 1px 0px;
     border-color: #999;
-    text-align: center;
-    margin-left: 70px;
-    margin-right: 40px;
-    padding-bottom: 1px;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 20px;
+    padding-bottom: 5px;
 
 }
 
@@ -323,90 +322,7 @@ div .age12to14 {
     background-color: var(--12-14-color);
 }
 
-@media screen and (max-width: 950px) {
-    .subway-icon {
-        display:none;
-    }
-    .project-name, .project-name.mini-course {
-         font-size: 80%;
-         margin-top:10px;
-        margin-left:10px;
-     }
-    .project-name.mini-course {
-          font-size: 60%;
-          margin-top:25px;
-            margin-left:-10px;
-    }
 
-    .project-start {
-        height:15px;
-        width:15px;
-        margin-top:4px;
-    }
-    .season-start {
-        width: 25px;
-        height: 25px;
-        margin-top:6px;
-    }
-    .track-details {
-        font-size: 90%;
-    }
-    .track-label-description {
-        font-size: 70%;
-    }
-    .track-label {
-        font-size:20px;
-    }
-    .new-track {
-        margin-top:120px;
-    }
-
-
-}
-@media screen and (max-width: 650px) {
-
-
-    .track-details {
-        display: none;
-    }
-    .track {
-        display: none;
-    }
-    .track-name {
-        width:95%;
-        margin: auto;
-        text-align: center;
-    }
-    .track-photo {
-        width:95%;
-        min-height:400px;
-        margin:auto;
-        margin-top:10px;
-    }
-    .track-label-description {
-        font-size: 18px;
-        text-align: justify;
-    }
-    .track-label {
-        font-size:25px;
-        margin: auto;
-        line-height: normal;
-    }
-    .new-track {
-        margin-top:50px;
-    }
-    .track-info {
-        flex-direction: column;
-        margin: auto;
-    }
-    .tag-section div {
-        flex-grow: 2;
-    }
-    .age-section div {
-        flex-grow: 2;
-    }
-
-}
 
 /*SEASON PHOTOS*/
 
@@ -424,7 +340,6 @@ div .age12to14 {
 
 .inner-photo{
     margin:auto;
-    background-size: contain ;
     background-size: cover ;
     background-repeat: no-repeat;
     background-position: center;
@@ -438,9 +353,25 @@ div .age12to14 {
     margin:auto;
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     /*padding: 10px;*/
 }
-
+.photo-text {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+    margin-top:-27px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    /*text-transform: full-width;*/
+    /*margin-bottom: 10px;*/
+    background-color: var(--background-color-alphed);
+    pointer-events: none;
+}
 .inner-photo:hover {
     opacity: 1;
 }
@@ -448,6 +379,7 @@ div .age12to14 {
 .inner-photo:hover > .color-overlay {
     display:none;
 }
+
 
 .color-overlay {
     width: 100%;
@@ -513,3 +445,114 @@ div .age12to14 {
 /*.track-photos {*/
 /*display: none;*/
 /*}*/
+
+/*TURN OFF OVERLAYS:*/
+
+.color-overlay {
+    /*display:none;*/
+}
+
+
+
+
+@media screen and (max-width: 950px) {
+    .subway-icon {
+        display:none;
+    }
+    .project-name, .project-name.mini-course {
+        font-size: 80%;
+        margin-top:10px;
+        margin-left:10px;
+    }
+    .project-name.mini-course {
+        font-size: 60%;
+        margin-top:25px;
+        margin-left:-10px;
+    }
+
+    .project-start {
+        height:15px;
+        width:15px;
+        margin-top:4px;
+    }
+    .season-start {
+        width: 25px;
+        height: 25px;
+        margin-top:6px;
+    }
+    .track-details {
+        font-size: 90%;
+    }
+    .track-label-description {
+        font-size: 70%;
+    }
+    .track-label {
+        font-size:20px;
+    }
+    .new-track {
+        margin-top:120px;
+    }
+    .season-labels {
+        display: none;
+    }
+    .color-overlay {
+        display:none;
+    }
+
+
+}
+@media screen and (max-width: 650px) {
+
+
+    .track-details {
+        display: none;
+    }
+    .track {
+        display: none;
+    }
+    .track-name {
+        width:95%;
+        margin: auto;
+        text-align: center;
+    }
+    .track-photo {
+        width:95%;
+        min-height:400px;
+        margin:auto;
+        margin-top:10px;
+    }
+    .track-label-description {
+        font-size: 18px;
+        text-align: justify;
+    }
+    .track-label {
+        font-size:25px;
+        margin: auto;
+        line-height: normal;
+    }
+    .new-track {
+        margin-top:50px;
+    }
+    .track-info {
+        flex-direction: column;
+        margin: auto;
+    }
+    .tag-section div {
+        flex-grow: 2;
+    }
+    .age-section div {
+        flex-grow: 2;
+    }
+
+
+    .inner-photo {
+        background-size: contain;
+    }
+    .subway-icon {
+        display: none;
+    }
+
+    .photo-text {
+        display: none;
+    }
+}

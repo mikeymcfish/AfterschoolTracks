@@ -11,7 +11,10 @@ body {
     --background-color: black;
     --font-color: white;
     --background-color: #f6f6f6;
+    --background-color: white;
+
     --font-color: #333333;
+    --background-color-alphed: rgba(246,246,246,.2);
     --7-9-color: red;
     --9-11-color: blue;
     --12-14-color: green;
@@ -103,7 +106,7 @@ body {
     align-content: flex-start;
     justify-content: flex-start;
     height:100%;
-    width:50%;
+    width:85%;
     margin-left:0px;
     flex-grow: .5;
 
@@ -117,9 +120,12 @@ body {
 }
 .track-photo {
     width:30%;
-    background-color: #666666;
+    /*background-color: #666666;*/
     margin: 0px 15px 0px 15px;
-    min-height: 120px;
+    min-height: 170px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     /*max-height: 500px;*/
 
 }
@@ -195,13 +201,13 @@ body {
 }
 
 .project-start {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border-radius: 100%;
     background-color: var(--project-stop-color);
     display: block;
     position: absolute;
-    top:-11px;
+    top:-9px;
     border: 4px solid var(--stop-outline-color);
     box-shadow: -6px -4px 0px rgba(0, 0, 0, 0.15) inset;
 
@@ -218,6 +224,14 @@ body {
     font-weight: 500;
     line-height: 95%;
     margin-bottom: auto;
+    /*background-color: white;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*text-shadow:*/
+            /*-1px -1px 0 var(--background-color-alphed),*/
+            /*1px -1px 0 var(--background-color-alphed),*/
+            /*-1px 1px 0 var(--background-color-alphed),*/
+            /*1px 1px 0 var(--background-color-alphed);*/
 }
 .project-name.mini-course {
     margin-top: 30px;
@@ -250,17 +264,18 @@ body {
     /*flex-grow: 1;*/
     text-align: center;
 }
-.age-section div {
-    height:20px;
-    line-height: 18px;
-    margin:0px 5px 0px 0px;
-    background-color: red;
-    color:white;
-    padding: 0px 10px 0px 10px;
-    border-radius: 8px;
-    /*flex-grow: .5;*/
-    text-align: center;
-}
+/*.age7to9*/
+/*.age-section {*/
+    /*height:20px;*/
+    /*line-height: 18px;*/
+    /*margin:0px 5px 0px 0px;*/
+    /*background-color: red;*/
+    /*color:white;*/
+    /*padding: 0px 10px 0px 10px;*/
+    /*border-radius: 8px;*/
+    /*!*flex-grow: .5;*!*/
+    /*text-align: center;*/
+/*}*/
 
 div .online-safety-tag {
     background-color: hotpink;
@@ -314,8 +329,11 @@ div .age12to14 {
         margin-top:120px;
     }
 
+
 }
 @media screen and (max-width: 650px) {
+
+
     .track-details {
         display: none;
     }
@@ -329,7 +347,7 @@ div .age12to14 {
     }
     .track-photo {
         width:95%;
-        min-height:200px;
+        min-height:400px;
         margin:auto;
         margin-top:10px;
     }
@@ -355,10 +373,111 @@ div .age12to14 {
     .age-section div {
         flex-grow: 2;
     }
+
 }
 
-#minecraft-fall {
-    background-image: url("img/minecraft-fall.png");
-    background-position: center;
-    background-size: cover;
+/*SEASON PHOTOS*/
+
+.track-photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 200px;
+    width: 85%;
+    background-color: var(--background-color);
+    margin: 10px auto 10px auto;
+
 }
+
+.inner-photo{
+    margin:auto;
+    background-size: contain ;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    /*padding-left: 100px;*/
+    /*padding-right: 40px;*/
+    /*padding:20px;*/
+}
+.season-photo{
+    margin:auto;
+    height: 100%;
+    width: 100%;
+    /*padding: 10px;*/
+}
+
+.inner-photo:hover {
+    opacity: 1;
+}
+
+.inner-photo:hover > .color-overlay {
+    display:none;
+}
+
+.color-overlay {
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: color;
+    pointer-events: none;
+}
+
+/*JUST ROBLOX*/
+
+.roblox-color .inner-photo .color-overlay {
+    background-color: var(--roblox-color);
+}
+.fortnite-color .inner-photo .color-overlay {
+    background-color: var(--fortnite-color);
+}
+
+#roblox-fall .inner-photo, .roblox-fall {
+    background-image: url("img/roblox-fall.png");
+}
+#roblox-winter .inner-photo {
+    background-image: url("img/roblox-winter.png");
+}
+#roblox-spring .inner-photo {
+    background-image: url("img/roblox-spring.png");
+}
+
+@media screen and (max-width: 500px) {
+
+    .track-photos {
+        display: none;
+    }
+}
+
+/*USE SEASON PHOTOS OR ONE PHOTO*/
+
+
+.track-photo {
+    display: none;
+
+}
+.subway-icon {
+    display: flex;
+    justify-content: center;
+    /*align-content: center;*/
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    border-radius: 100%;
+    font-size: 76px;
+    background-color: rgb(255, 61, 61);
+    box-shadow: -12px -16px 0px rgba(0, 0, 0, 0.15) inset;
+    flex-shrink: 0;
+    /*flex-grow:3;*/
+    color: white;
+    font-weight: 900;
+    line-height: 120px;
+    margin-left: -30px;
+    margin-right: 60px;
+}
+
+
+/*.track-photos {*/
+/*display: none;*/
+/*}*/

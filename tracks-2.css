@@ -93,6 +93,10 @@ body {
     --stop-outline-color: var(--video-color);
 }
 
+#roblox-track {
+    /*background-color: #e9e9e9;*/
+}
+
 
 
 .subway-icon div {
@@ -335,13 +339,31 @@ body {
     height:20px;
     width: auto;
     line-height: 18px;
-    margin:5px 5px 0px 0px;
+    margin:8px 8px 0px 0px;
     background-color: orange;
     color:white;
     padding: 0px 10px 0px 10px;
     border-radius: 8px;
     /*flex-grow: 1;*/
     text-align: center;
+}
+.list-of-skills.roblox-color .skill {
+    background-color: var(--roblox-color);
+}
+.list-of-skills.fortnite-color .skill {
+    background-color: var(--fortnite-color);
+}
+.list-of-skills.minecraft-color .skill {
+    background-color: var(--minecraft-color);
+}
+.list-of-skills.video-color .skill {
+    background-color: var(--video-color);
+}
+.list-of-skills.coding-color .skill {
+    background-color: var(--coding-color);
+}
+.list-of-skills.hardware-color .skill {
+    background-color: var(--hardware-color);
 }
 .location {
     display: flex;
@@ -385,7 +407,7 @@ body {
 }
 
 div .offered-at {
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     color: #333;
     font-size: 15px;
     font-weight: 900;
@@ -395,7 +417,7 @@ div .offered-at {
 }
 
 div .online-safety-tag {
-    background-color: hotpink;
+    background-color: #ababab;
 }
 
 div .age7to9 {
@@ -419,7 +441,7 @@ div .age12to14 {
     align-content: center;
     height: 200px;
     width: 85%;
-    background-color: var(--background-color);
+    /*background-color: var(--background-color);*/
     margin: 10px auto 10px auto;
 
 }
@@ -483,7 +505,9 @@ div .age12to14 {
     background-color: var(--fortnite-color);
 }
 
-#roblox-fall .inner-photo, .roblox-fall {
+/*all images go here*/
+
+#roblox-fall .inner-photo {
     background-image: url("img/roblox-fall.png");
 }
 #roblox-winter .inner-photo {
@@ -491,6 +515,46 @@ div .age12to14 {
 }
 #roblox-spring .inner-photo {
     background-image: url("img/roblox-spring.png");
+}
+
+#minecraft-fall .inner-photo {
+    background-image: url("img/minecraft-fall.png");
+}
+#minecraft-winter .inner-photo {
+    background-image: url("img/minecraft-winter.png");
+}
+#minecraft-spring .inner-photo {
+    background-image: url("img/minecraft-spring.png");
+}
+
+#fortnite-fall .inner-photo {
+    background-image: url("img/fortnite-fall.png");
+}
+#fortnite-winter .inner-photo {
+    background-image: url("img/fortnite-winter.png");
+}
+#fortnite-spring .inner-photo {
+    background-image: url("img/fortnite-spring.png");
+}
+
+#coding-fall .inner-photo {
+    background-image: url("img/coding-fall.png");
+}
+#coding-winter .inner-photo {
+    background-image: url("img/coding-winter.png");
+}
+#coding-spring .inner-photo {
+    background-image: url("img/coding-spring.png");
+}
+
+#video-fall .inner-photo {
+    background-image: url("img/video-fall.png");
+}
+#video-winter .inner-photo {
+    background-image: url("img/video-winter.png");
+}
+#video-spring .inner-photo {
+    background-image: url("img/video-spring.png");
 }
 
 @media screen and (max-width: 500px) {
@@ -556,12 +620,20 @@ div .age12to14 {
 .full-track {
     display: none;
 }
-.season-labels {
-    display: none;
-}
-
+/*.season-labels {*/
+    /*display: none;*/
+/*}*/
 .color-overlay {
     display:none;
+}
+.options-section {
+    display: none;
+}
+.offered-at {
+    display: none;
+}
+.photo-text {
+    display: none;
 }
 
 
@@ -690,4 +762,276 @@ div .age12to14 {
     .photo-text {
         display: none;
     }
+}
+
+
+/*BEGIN CHARTS SECTION*/
+
+.info-charts {
+    margin: auto;
+    margin-top:150px;
+    width:80%;
+
+}
+.topics-chart {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 95%;
+}
+.age-row-offerings-rows:not(.days-row) div {
+    background-color: #efefef;
+    border-style: none solid none none;
+    border-width: 1px;
+    border-color: var(--background-color);
+}
+.topics-chart div {
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+    /*padding:2px;*/
+    width: 100%;
+}
+/*.single-topic-row.days-row {*/
+    /*!*display: flex;*!*/
+    /*!*flex-direction: row;*!*/
+    /*!*justify-content: space-around;*!*/
+    /*!*align-content: space-around;*!*/
+    /*background-color: none;*/
+/*}*/
+
+.age-row-age {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    border-style: none none solid none;
+    border-width: 2px;
+    border-color: #eee;
+}
+
+.age-row-offerings-rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.single-topic-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    /*padding:2px;*/
+    margin-bottom:1px;
+    /*min-height:50px;*/
+    height:33%;
+}
+.single-topic-row.only-2 {
+    height:50%;
+}
+
+/*.for7to9 > div {*/
+    /*background-color: var(--7-9-color);*/
+    /*width:100%;*/
+/*}*/
+/*.for9to11 .topic-offered {*/
+    /*background-color: var(--9-11-color);*/
+    /*width:100%;*/
+/*}*/
+/*.age-row-age-title, .days-row {*/
+    /*justify-items: center;*/
+    /*font-size: 120%;*/
+    /*font-weight: 200;*/
+    /*line-height: 140%;*/
+
+/*}*/
+
+@media screen and (max-width: 1000px) {
+
+    .age-row-age-title, .days-row {
+        justify-items: center;
+        font-size: 100%;
+        font-weight: 200;
+        line-height: 100%;
+
+    }
+
+}
+
+
+.age-row-age-title {
+    margin:auto; !important;
+    max-width: 150px;
+}
+.days-row {
+    /*margin-bottom: 10px;*/
+    /*font-size: 18px;*/
+}
+.for7to9 .age-row-offerings-rows .single-topic-row .topic-offered {
+    background-color: var(--7-9-color);
+
+}
+.for9to11 .age-row-offerings-rows .single-topic-row .topic-offered {
+    background-color: var(--9-11-color);
+
+}
+.for12to14 .age-row-offerings-rows .single-topic-row .topic-offered {
+    background-color: var(--12-14-color);
+
+}
+
+.single-topic-name {
+    padding:10px;
+    line-height: 19px;
+    font-size:16px;
+    justify-items: center;
+    justify-self: center;
+    margin: auto;
+    font-weight: 500;
+    /*flex-shrink:.2;*/
+    /*border-style: solid none solid;*/
+    /*border-width: 1px;*/
+    /*border-color: black; !important;*/
+}
+
+.single-topic-row div:not(:first-child) {
+
+    /*width: 100px;*/
+    width:20%;
+}
+
+.day {
+    margin: auto;
+    border-style: none none none solid;
+    border-width: 2px;
+    border-color: #eee;
+    height:20px;
+    padding-bottom: 10px;
+}
+
+/*PRICE CHART BEGIN*/
+
+.price-chart {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex: 2 2 200px;
+    /*margin: auto;*/
+    width: 70%;
+    justify-content: space-between;
+    text-align: center;
+    padding:10px;
+    line-height: 19px;
+    font-size:15px;
+    font-weight: 100;
+    margin-bottom: 25px;
+
+}
+.price-chart div {
+    /*border: solid;*/
+    /*border-width: 1px;*/
+    padding:2px;
+}
+.day-col {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    width: 100%;
+
+}
+.day-col:not(:first-of-type) {
+    border-style: none none none solid;
+    border-width: 1px;
+    border-color: #aaa;
+
+}
+.price {
+    border-style: none none none solid;
+    border-width: 1px;
+    border-color: #ccc;
+
+    /*width:50%;*/
+}
+.number-of-days div:first-child {
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: #ccc;
+
+    /*width:50%;*/
+}
+.price div:first-child {
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: #ccc;
+
+    /*width:50%;*/
+
+}
+.number-of-days {
+    margin: auto;
+    width:50px;
+}
+.price {
+    margin: auto;
+    width:50px;
+
+}
+.subtitle-row {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+    justify-content: space-around;
+}
+.subtitle-row:first-of-type div {
+    width:200px;
+    text-align: right;
+    padding-right:8px;
+    font-weight: 500;
+}
+
+.season-col {
+    height:300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+
+}
+.season-col div {
+    margin: auto;
+    display: flex;
+    height:30px;
+}
+
+.season-title{
+    font-weight: 400;
+}
+
+.day-title-row {
+    font-size: 125%;
+    font-weight: 400;
+}
+.number-of-days div:first-child {
+    font-weight: 400;
+}
+.price div:first-child {
+    font-weight: 400;
+}
+.smaller-text {
+    font-weight: 100;
+    color: #999999;
+    font-size:80%;
+    text-transform: uppercase;
+}
+.location-header {
+    font-weight: 900;
+    font-size: 30px;
+    text-align: left;
+    font-weight: 500;
+
+
 }

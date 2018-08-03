@@ -1082,10 +1082,12 @@ div .age12to14 {
 }
 .explainer-section {
     display: flex;
+    /*flex-direction: row;*/
 }
 .explainer-copy {
-    width:80%;
+    width:70%;
     font-weight: 100;
+    font-size: 110%;
 }
 
 /*START DEMO TRACK VERTICAL CSS*/
@@ -1102,7 +1104,7 @@ div .age12to14 {
     /*justify-content: flex-start;*/
     /*align-content: flex-start;*/
     width:70px;
-    height: 400px;
+    height: 300px;
     margin-top:0px;
     /*margin-left: 30px;*/
 
@@ -1112,7 +1114,7 @@ div .age12to14 {
     /*justify-content: flex-start;*/
     /*align-content: center;*/
     width:6px;
-    height:400px;
+    height:300px;
     border-radius: 10px;
     position: relative;
     margin-top: -13px;

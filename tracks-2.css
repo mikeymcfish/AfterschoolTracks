@@ -352,6 +352,8 @@ body {
     /*flex-grow: 1;*/
     text-align: center;
 }
+
+
 .list-of-skills.roblox-color .skill {
     background-color: var(--roblox-color);
 }
@@ -1090,6 +1092,47 @@ div .age12to14 {
     font-size: 110%;
 }
 
+.number-of-days div:last-child {
+    font-weight: 600;
+}
+.price div:last-child {
+    font-weight: 600;
+}
+.screen-time-section {
+    text-align: center;
+    font-size:14px;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    color: #666666;
+    margin: auto;
+}
+.screen-time-icon {
+    background: url(img/screen.svg);
+    background-size: cover;
+    width:20px;
+    height:18px;
+    margin-right:5px;
+}
+.screen-time-icon-most {
+    background: url(img/screen-most.svg);
+    background-size: cover;
+    width:17px;
+    height:15px;
+    margin-right:5px;
+}
+.screen-time-icon-little {
+    background: url(img/screen-little.svg);
+    background-size: cover;
+    width:17px;
+    height:15px;
+    margin-right:5px;
+}
+.slightly-less-line-height {
+    line-height:95%;
+    /*font-size: 95%;*/
+    padding-bottom:5px;
+}
 /*START DEMO TRACK VERTICAL CSS*/
 
 

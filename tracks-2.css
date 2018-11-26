@@ -644,10 +644,10 @@ div .age12to14 {
     display:none;
 }
 .options-section {
-    display: none;
+    /*display: none;*/
 }
 .offered-at {
-    display: none;
+    /*display: none;*/
 }
 .photo-text {
     display: none;

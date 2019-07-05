@@ -372,6 +372,16 @@ body {
 .list-of-skills.hardware-color .skill {
     background-color: var(--hardware-color);
 }
+.new-tag {
+    background-color: red;
+    border-radius: 4px;
+    color: #ffffff;
+    padding:3px;
+    height: 14px;
+    font-weight:bold;
+    font-size:12px;
+    margin-left:3px;
+}
 .location {
     display: flex;
     flex-direction: column;
